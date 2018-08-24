@@ -17,5 +17,9 @@ namespace SaludoWindowsGrupo5
             MessageBox.Show("Hola " + nombre,"Saludo");
         }
         
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtbNombre.Text = "";
+        }
     }
 }

@@ -10,6 +10,7 @@ namespace SaludoWindowsGrupo5
         private Label etIngresaNombre;
         private TextBox txtbNombre;
         private Button btnAceptar;
+        private Button btnLimpiar;
         #endregion
         #region Métodos de inicio
         public void IniciarComponentes()
@@ -44,9 +45,18 @@ namespace SaludoWindowsGrupo5
             btnAceptar.BackColor = Color.Cyan;
             btnAceptar.Click += new EventHandler(btnAceptar_Click);
 
+            btnLimpiar = new Button();
+            btnLimpiar.Text = "Limpiar";
+            btnLimpiar.TextAlign = ContentAlignment.MiddleCenter;
+            btnLimpiar.Location = new Point(150, 100);
+            btnLimpiar.Size = new Size(100, 20);
+            btnLimpiar.BackColor = Color.Cyan;
+            btnLimpiar.Click += new EventHandler(btnLimpiar_Click);
+
             this.Controls.Add(etIngresaNombre);
             this.Controls.Add(txtbNombre);
             this.Controls.Add(btnAceptar);
+            this.Controls.Add(btnLimpiar);
 
 
         }
