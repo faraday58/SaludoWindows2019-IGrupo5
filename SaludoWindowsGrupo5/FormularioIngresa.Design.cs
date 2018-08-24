@@ -42,12 +42,18 @@ namespace SaludoWindowsGrupo5
             btnAceptar.Location = new Point(30, 100);
             btnAceptar.Size = new Size(100, 20);
             btnAceptar.BackColor = Color.Cyan;
+            btnAceptar.Click += new EventHandler(btnAceptar_Click);
 
             this.Controls.Add(etIngresaNombre);
             this.Controls.Add(txtbNombre);
             this.Controls.Add(btnAceptar);
 
 
+        }
+
+        private void BtnAceptar_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
         #endregion
     }
